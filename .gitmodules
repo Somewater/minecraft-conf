@@ -1,0 +1,6 @@
+[submodule "minecraft-init"]
+	path = minecraft-init
+	url = http://github.com/Ahtenus/minecraft-init.git
+[submodule "mc-overviewer/Minecraft-Overviewer"]
+	path = mc-overviewer/Minecraft-Overviewer
+	url = http://github.com/overviewer/Minecraft-Overviewer.git
