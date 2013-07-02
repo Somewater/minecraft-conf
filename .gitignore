@@ -1,0 +1,9 @@
+*.log
+*.log.*
+*.pid
+world
+world_nether
+world_the_end
+mc-overviewer/render/*
+mc-overviewer/log/*
+mc-overviewer/overviewerbackups/*
