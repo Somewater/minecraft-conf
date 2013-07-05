@@ -22,13 +22,14 @@
 
 # Loads config file
 
-#if [ -L $0 ]
-#then
-#	source `readlink -e $0 | sed "s:[^/]*$:config:"`
-#else
-#	source `echo $0 | sed "s:[^/]*$:config:"`
-#fi
-source '/data/srv/minecraft/config.conf'
+CONFIG_FILE=`readlink -e $0 | sed "s:[^/]*$:init-server.conf:"`
+if [ -e $CONFIG_FILE ]
+then
+	MCPATH=$(dirname $(dirname ${CONFIG_FILE}))
+	source $CONFIG_FILE
+else
+	source '/data/srv/minecraft/config/init-server.conf'
+fi
 
 if [ "$SERVICE" == "" ]
 then

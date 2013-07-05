@@ -9,3 +9,5 @@ mc-overviewer/log/*
 mc-overviewer/overviewerbackups/*
 *.iml
 .idea/*
+target/*
+plugins/*.jar
