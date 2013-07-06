@@ -18,7 +18,7 @@ namespace :java do
     plugin_name = class_name.downcase
     puts "Start compiling #{class_name}"
     FileUtils.mkdir_p "target/#{plugin_name}"
-    status = %x[javac -cp libs/*.jar -g -d target/#{plugin_name} -sourcepath src/main/java/ src/main/java/com/hellespontus/plugins/#{class_name}.java]
+    status = %x[javac -cp libs/*.jar -g -Xlint:unchecked -d target/#{plugin_name} -sourcepath src/main/java/ src/main/java/com/hellespontus/plugins/#{class_name}.java]
     if status.to_s.size == 0
       puts "[ok] compiling"
     else
