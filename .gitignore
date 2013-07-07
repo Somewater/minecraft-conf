@@ -11,3 +11,4 @@ mc-overviewer/overviewerbackups/*
 .idea/*
 target/*
 plugins/*.jar
+mcbackup/*
