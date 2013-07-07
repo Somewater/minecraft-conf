@@ -1,7 +1,7 @@
 require 'fileutils'
 
 task :default do
-  Rake::Task["java:compile"].invoke("HelloWorld")
+  Rake::Task["java:compile"].invoke("HellespontusWorld")
   Rake::Task["server:reload"].invoke()
 end
 
@@ -39,7 +39,7 @@ namespace :java do
 end
 
 namespace :server do
-  desk "Reload server plugins"
+  desc "Reload server plugins"
   task :reload do
     puts %x[sudo service minecraft command reload]
   end

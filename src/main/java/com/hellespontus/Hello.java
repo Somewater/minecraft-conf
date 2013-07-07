@@ -1,9 +1,9 @@
 package com.hellespontus;
 
-import com.hellespontus.plugins.HelloWorld;
+import com.hellespontus.plugins.HellespontusWorld;
 
 public class Hello {
     public static void main(String[] args){
-        HelloWorld.class.cast(null);
+        HellespontusWorld.class.cast(null);
     }
 }

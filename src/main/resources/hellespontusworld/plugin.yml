@@ -1,0 +1,19 @@
+name: HellespontusWorld
+main: com.hellespontus.plugins.HellespontusWorld
+version: 0.0.1
+author: Pavel Naydenov
+
+commands:
+  point:
+    desc:
+    aliases: [p]
+    usage: Show current player coondinates
+    
+permissions:
+   hellespontus.*:
+     description: Hellespontus world commands
+     children:
+       hellespontus.point: true
+   hellespontus.point:
+     description: Allow view player current position
+     default: true
