@@ -5,9 +5,12 @@ author: Pavel Naydenov
 
 commands:
   point:
-    desc:
+    desc: Show current player coondinates
     aliases: [p]
-    usage: Show current player coondinates
+    usage: /point 
+  blockline:
+    desc: Create line from <N> blocks
+    usage: /blockline <N>
     
 permissions:
    hellespontus.*:
@@ -17,3 +20,6 @@ permissions:
    hellespontus.point:
      description: Allow view player current position
      default: true
+   hellespontus.blockline:
+     description: Allow player create <N> block line
+     default: false
