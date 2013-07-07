@@ -1,5 +1,10 @@
 require 'fileutils'
 
+task :default do
+  Rake::Task["java:compile"].invoke("HelloWorld")
+  Rake::Task["server:reload"].invoke()
+end
+
 namespace :sync do
   desc "Sync worlds from server"
   task :from do
@@ -30,5 +35,12 @@ namespace :java do
     else
       puts "ARCHIVING ERROR\n#{status}"
     end
+  end
+end
+
+namespace :server do
+  desk "Reload server plugins"
+  task :reload do
+    puts %x[sudo service minecraft command reload]
   end
 end
