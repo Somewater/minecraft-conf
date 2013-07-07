@@ -127,7 +127,7 @@ public class HellespontusWorld extends JavaPlugin implements Listener{
                 return true;
             }
             int amount = Integer.parseInt(args[0]);
-            if(amount > 500) {
+            if(amount > 100) {
                 commandSender.sendMessage("Amount too big");
                 return true;
             }
