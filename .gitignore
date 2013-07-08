@@ -12,3 +12,7 @@ mc-overviewer/overviewerbackups/*
 target/*
 plugins/*.jar
 mcbackup/*
+banned-ips.txt
+banned-players.txt
+config/init-server.conf
+server.properties
