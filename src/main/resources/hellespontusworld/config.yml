@@ -1,3 +1,2 @@
-world_spawnpoint: [-75, 64, 248]
-unbreakable:
- - [-75, 64, 248, 1]
+world_spawnpoint: [-76, 64, 250]
+unbreakable: []
