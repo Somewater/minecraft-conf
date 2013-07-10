@@ -19,6 +19,11 @@
 # Support for multiworld by Benni-chan
 # Log rolls without needing restarts by Solorvox
 # Option for killing server in an emergency by jbondhus
+#
+# crontab -e
+#  02  05  *   *   *   /etc/init.d/minecraft backup
+#  55  04  *   *   *   /etc/init.d/minecraft log-roll
+#  */30    *   *   *   *   /etc/init.d/minecraft to-disk
 
 # Loads config file
 
