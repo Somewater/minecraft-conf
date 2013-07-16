@@ -11,6 +11,7 @@ mc-overviewer/overviewerbackups/*
 .idea/*
 target/*
 plugins/*.jar
+plugins/WorldEdit/schematics/*
 mcbackup/*
 banned-ips.txt
 banned-players.txt
