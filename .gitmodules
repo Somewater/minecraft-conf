@@ -4,3 +4,8 @@
 [submodule "mc-overviewer/Minecraft-Overviewer"]
 	path = mc-overviewer/Minecraft-Overviewer
 	url = http://github.com/overviewer/Minecraft-Overviewer.git
+	branch = 152r1
+[submodule "CraftBukkit"]
+	path = CraftBukkit
+	url = https://github.com/Somewater/CraftBukkit.git
+	branch = 152r1
