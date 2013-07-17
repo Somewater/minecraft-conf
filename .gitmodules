@@ -7,9 +7,9 @@
 	branch = 152r1
 [submodule "CraftBukkit"]
 	path = CraftBukkit
-	url = https://github.com/Somewater/CraftBukkit.git
+	url = http://github.com/Somewater/CraftBukkit.git
 	branch = 152r1
 [submodule "Bukkit"]
         path = Bukkit
-        url = https://github.com/Somewater/Bukkit.git
+        url = http://github.com/Somewater/Bukkit.git
         branch = 152r1
