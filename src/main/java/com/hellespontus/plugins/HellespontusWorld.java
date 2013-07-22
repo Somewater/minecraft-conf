@@ -26,6 +26,8 @@ public class HellespontusWorld extends JavaPlugin implements Listener{
     Logger log = Logger.getLogger("Minecraft");
 
     public void onEnable(){
+        List<Integer> worldSpawnPoint = getConfig().getIntegerList("world_spawnpoint");
+        getServer().getWorld("world").setSpawnLocation(worldSpawnPoint.get(0), worldSpawnPoint.get(1), worldSpawnPoint.get(2));
     }
 
     public void onDisable(){
